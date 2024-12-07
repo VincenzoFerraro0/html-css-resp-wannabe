@@ -130,26 +130,30 @@ img {
  /* media query dai 748px in poi, decisione: desktop first */
  @media  screen and (min-width: 768px ) {
     .container {
-        max-width: 100%;
+        width: 100%;
     }
  }
  
  /* media query per tablet, decisione: desktop first */
  @media screen and (max-width: 768px)  {
     .container {
-        max-width: 100%;
+        width: 100%;
     }
 }
  /* media query per smartphone, decisione: desktop first */
 @media screen and (max-width: 480px ) {
+    
+    .container {
+        width: 100%;
+    }
+    .steps {
+        margin-bottom: 0;
+    }
     .row {
         flex-wrap: wrap;
     }
-    .lessons .col {
-        flex-basis: 100%;
-        
-    }
 
+    .lessons .col,
     .steps .col {
         flex-basis: 100%;
         
@@ -157,6 +161,11 @@ img {
 
     .card {
         margin-block: 2em ;
+    }
+    
+    .why-us {
+        margin-bottom: 0;
+        background-color: #222222;
     }
 
     .why-us .col-left,
